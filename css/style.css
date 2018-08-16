@@ -238,7 +238,6 @@ img {
     .main-nav {
         position: fixed;
         right: 0;
-        height: calc(100vh - 80px);
         -webkit-box-shadow: 0px 80px 0px 0px #1C1D21;
         box-shadow: 0px 80px 0px 0px #1C1D21;
         max-width: 250px;
@@ -589,7 +588,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   font-family: 'Lato', sans-serif;
 
   left: 50%;
-  top: 50%;
+  top: 52%;
   bottom: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -1468,7 +1467,7 @@ textarea.form-control {
  position: absolute;
  content: "";
  background-color: #000;
- opacity: 0.8;
+ opacity: 0.5;
  z-index: 6;
 }
 .video-background {
