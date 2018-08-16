@@ -1,0 +1,102 @@
+
+.cube__side,
+.no-js .cube {
+	border: 10px solid;
+	outline: 1px solid;
+	background-color: currentColor;
+	background-blend-mode: soft-light;
+}
+
+.cube:not(.cube--inactive):nth-child(1) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(1) {
+	background-image: url(../img/1.png);
+	color: #bccbde;
+}
+
+.cube:not(.cube--inactive):nth-child(2) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(2) {
+	background-image: url(../img/2.png);
+	color: #c2dde6;
+}
+
+.cube:not(.cube--inactive):nth-child(3) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(3) {
+	background-image: url(../img/3.png);
+	color: #431c5d;
+}
+
+.cube:not(.cube--inactive):nth-child(4) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(4) {
+	background-image: url(../img/4.png);
+	color: #e05915;
+}
+
+.cube:not(.cube--inactive):nth-child(5) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(5) {
+	background-image: url(../img/5.png);
+	color: #cdd422;
+}
+
+.cube:not(.cube--inactive):nth-child(6) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(6) {
+	background-image: url(../img/6.png);
+	color: #b56969;
+}
+
+
+
+
+/* With JS we insert a number span into the cube */
+
+.cube__number,
+.no-js .cube::after {
+	bottom: auto;
+	top: 0.8em;
+    left: -0.4em;
+    right: auto;
+    line-height: 1;
+    font-size: 1em;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 50.75em) {
+	.cube__number,
+	.no-js .cube::after {
+		font-size: 1em;
+	}
+}
+
+.js .content__block {
+	width: 100%;
+	text-align: center;
+	left: 0;
+	padding: 2em;
+}
+
+.js .content__description {
+	padding: 0;
+	max-width: 30em;
+	margin: 2em auto 0.5em;
+}
+
+.js .content__meta {
+	padding: 0;
+}
+
+.content__number {
+	color: #fff;
+	font-weight: bold;
+	line-height: 0.5;
+	letter-spacing: -0.175em;
+	text-indent: -0.175em;
+	font-size: 35vw;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
+}

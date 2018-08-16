@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Inginit</title>
+        <!-- Bootstrap core CSS -->
+         <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="css/reset.css"> 
+        <!-- CSS reset -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css"> 
+        <!-- Resource style -->
+        <script src="js/modernizr.js"></script>         
+        <!-- Modernizr -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,500" rel="stylesheet">
+    
+		
+		
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<style >
+	/* Set-up */
+body {
+	color: rgb(6, 106, 117);
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 100%;
+	background: #F4F6F8;
+	padding: 3em 0 0 0;
+	line-height: 62px;
+	-webkit-perspective: 1000px; 
+}
+
+/* Container box to set the sides relative to */
+.cube {
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+	height: 200px;
+
+	-webkit-transition: -webkit-transform .33s;
+	transition: transform .33s; /* Animate the transform properties */
+
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d; /* <-NB */
+}
+
+/* The two faces of the cube */
+.flippety,.flop {
+	background: rgb(247, 247, 247);
+	border: 1px solid rgba(147, 184, 189, .8);
+
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset;
+	box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset;
+	height: 200px;
+}
+
+/* Position the faces */
+.flippety {
+	-webkit-transform: translateZ(100px);
+	transform: translateZ(100px);
+}
+
+.flop {
+	-webkit-transform: rotateX(-90deg) translateZ(-100px);
+	transform: rotateX(-90deg) translateZ(-100px);
+}
+
+/* Rotate the cube */
+.cube:hover {
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg); /* Text bleed at 90º */
+}
+
+	</style>
+	
+    </head>
+    <body>
+	
+	
+	<div class="cube">
+	<div class="flippety">
+		<h1>Flippity</h1>
+	</div>
+	<div class="flop">
+		<h2>Flop</h2>
+	</div>
+</div>
+	
+        <!-- Nav -->
+       <nav id="nav" class="navbar nav-transparent">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img class="logo" src="img/logo.png" alt="logo">
+                            <img class="logo-alt" src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /Logo -->
+                    <!-- Collapse nav button -->
+                    <div class="nav-collapse">
+                        <span></span>
+                    </div>
+                    <!-- /Collapse nav button -->
+                </div>
+                <!--  Main navigation  -->
+                <ul style="font-family: 'Montserrat', sans-serif;" class="main-nav nav navbar-nav navbar-right">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="solution.html">Solution</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                
+                </ul>
+               
+            </div>
+        </nav>
+       <!--  WHO WE ARE SECTION START HERE-->
+ <div class="container" style="margin-top: 10em;margin-bottom: 10em;">
+      <div class="row">
+
+     
+        <div class="calendar-wrap">
+        <div class="calendar">
+          <div class="cube"  data-title="YourOpinionLab"></div>
+          <div class="cube"  data-title="Styleforms"></div>
+          <div class="cube"  data-title="App Development"></div>
+          <div class="cube"  data-title="Survey Programming"></div>
+          <div class="cube"  data-title="Data Analytics"></div>
+          <div class="cube"  data-title="Staffing Solutions"></div>
+          
+        </div>
+        <div class="content">
+          <div class="content__block">
+            <h3 class="content__title">YourOpinionLab</h3>
+            <p class="content__description">If everyone demanded peace instead of another television set, then there'd be peace.</p>
+            <p class="content__meta">John Lennon</p>
+          </div>
+          <div class="content__block">
+            <h3 class="content__title">Styleforms</h3>
+            <p class="content__description">To be content with little is difficult; to be content with much, impossible.</p>
+            <p class="content__meta">Marie von Ebner-Eschenbach</p>
+          </div>
+          <div class="content__block">
+            <h3 class="content__title">App Development</h3>
+            <p class="content__description">The things you own end up owning you. It's only after you lose everything that you're free to do anything.</p>
+            <p class="content__meta">Chuck Palahniuk</p>
+          </div>
+          <div class="content__block">
+            <h3 class="content__title">Survey Programming</h3>
+            <p class="content__description">A lot of people get so hung up on what they can't have that they don't think for a second about whether they really want it.</p>
+            <p class="content__meta">Lionel Shriver</p>
+          </div>
+          <div class="content__block">
+            <h3 class="content__title">Data Analytics</h3>
+            <p class="content__description">It is the preoccupation with possessions, more than anything else that prevents us from living freely and nobly.</p>
+            <p class="content__meta">Bertrand Russell</p>
+          </div>
+          <div class="content__block">
+            <h3 class="content__title">Staffing Solutions</h3>
+            <p class="content__description">What is the use of a house if you haven't got a tolerable planet to put it on?</p>
+            <p class="content__meta">Henry David Thoreau</p>
+          </div>
+         
+          <div class="content__number">0</div>
+          <button class="btn-back" aria-label="Back to the grid view">&crarr;</button>
+        </div><!-- /content -->
+      </div>
+      
+ </div>
+ </div>
+	   <!--  WHO WE ARE SECTION END HERE-->
+	   
+	
+		
+<section id="section8" class="">
+        <div class="footer">
+        <div class="container-fluid">
+
+
+        <div class="col-md-3" style="margin-bottom: 2em;">
+            
+            <ul class="footer_menu">
+                 <img src="img/Inginit-logo-color-o.png" width="230" style="margin-top: -1em;">
+                  <h1 style="color: #fff;margin-top: 15px;">We make Data collection process easy</h1>
+                  <p style=" font-family: 'Lato', sans-serif; font-size: 13px;color: #fff;margin-top: 15px;line-height: 1.2;">Let your business focus on the big picture, we will take care of the details.We have helped many clients focus on their core business while we took care of all their data collection process.</p>
+
+
+              </ul>
+          </div>
+
+          <div class="col-md-1"></div>
+        
+          <div class="col-md-2" style="margin-bottom: 2em;">
+            <h5 class="footer-h5 ">SERVICES</h5>
+            <ul class="footer_menu">
+                
+                  <li><a href="#" title="">Data Collection Services</a></li>
+                
+                  <li><a href="#" title="">Application Development</a></li>
+                
+                  <li><a href="#" title="">API Integration</a></li>
+                
+                  <li><a href="#" title="">Custom Survey Tools</a></li>
+                
+                  <li><a href="#" title="">Development</a></li>
+
+                  <li><a href="#" title="">Survey Invites Management</a></li>
+                
+              </ul>
+          </div>
+
+       
+
+          <div class="col-md-3">
+            
+              <h6 class="footer-title">OFFICES</h6>
+              <ul class="footer_menu" style="color: #fff;">
+                
+                  <li><span style="font-weight: bold;">MUMBAI [HQ]</span><br><p style="font-size: 12px;margin-top: 1em;margin-bottom: 15px;line-height: 1.5;">B wing, 5th floor,<br>Ackruti Trade Centre,<br>MIDC,<br>Andheri East,<br>Mumbai – 400093 </p></li>
+                
+                   <li><span style="font-weight: bold;">DALLAS</span><br><p style="font-size: 12px;margin-top: 1em;margin-bottom: 15px;line-height: 1.5;">8765 Stockard Dr. Unit <br>101<br>Frisco, TX 75034<br>USA</p></li>
+                
+                   <li><span style="font-weight: bold;">GUWAHATI</span><br><p style="font-size: 12px;margin-top: 1em;margin-bottom: 15px;line-height: 1.5;">House No 3, 2nd  Floor<br>Suraj Bye Lane, Sewali <br>Path, Hatigaon,<br>Guwahati - 781038</p></li>
+                
+                  
+                
+              </ul>
+            
+          </div>
+
+          <div class="col-md-3">
+            
+              <h6 class="footer-title">COMPANY</h6>
+              <ul class="footer_menu">
+                
+                  <li><a href="#" title="">About Us</a></li>
+                
+                  <li><a href="#" title="">Career</a></li>
+                
+                  <li><a href="#" title="">Contact Us</a></li>
+
+                  <li><a href="#" title="">Privacy Policy</a></li>
+                
+                  <li><a href="#" title="">Terms of Service</a></li>
+                
+                  <li><a href="#" title="">Security</a></li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      
+        <div class="container-fluid ">
+          <div class="col-md-6 ">
+ <p class="footer-links">&copy; INGINIT 2018  </p></div>
+          
+       
+          
+          <div class="col-md-6 ">
+            <ul class="social" style="float: right;">
+               
+                <li><a href="#" class="face" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                
+                <li><a href="#" class="linkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>   
+          </div>
+      </div>
+     </div>
+
+</section>
+
+
+	   <!--  OPEN POSITION SECTION END HERE-->
+	
+		  
+	   
+        <!-- cd-section -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/main.js"></script> 
+        <script src="js/charming.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/textfx.js"></script>
+    <script src="js/main2.js"></script>        
+        <!-- Resource jQuery -->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
